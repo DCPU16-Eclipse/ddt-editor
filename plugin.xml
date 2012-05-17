@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="com.kokakiwi.eclipse.ddt.editor.DCPUEditor"
+            default="false"
+            extensions="dasm"
+            id="com.kokakiwi.eclipse.ddt.editor.DCPUEditor"
+            name="DCPU16 Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <wizard
+            category="com.kokakiwi.eclipse.ddt.wizards"
+            class="com.kokakiwi.eclipse.ddt.editor.wizards.DCPUFileWizard"
+            hasPages="true"
+            id="com.kokakiwi.eclipse.ddt.editor.wizards.NewFileWizard"
+            name="New DCPU16 File Wizard"
+            project="false">
+      </wizard>
+   </extension>
+
+</plugin>
